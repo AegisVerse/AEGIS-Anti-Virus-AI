@@ -1,0 +1,2 @@
+This is a clean, harmless text file used for negative test cases in AEGIS scanner benchmarks.
+Clean content without any indicators of compromise.

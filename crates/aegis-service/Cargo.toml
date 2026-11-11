@@ -1,0 +1,35 @@
+[package]
+name = "aegis-service"
+description = "Windows background security service and runner for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "aegis-service"
+path = "src/main.rs"
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+aegis-yara.workspace = true
+aegis-heuristics.workspace = true
+aegis-scanner.workspace = true
+aegis-quarantine.workspace = true
+aegis-behavior.workspace = true
+aegis-monitor.workspace = true
+aegis-network.workspace = true
+aegis-audit.workspace = true
+aegis-ai.workspace = true
+aegis-remediation.workspace = true
+aegis-updater.workspace = true
+aegis-ipc.workspace = true
+tokio.workspace = true
+tracing.workspace = true
+tracing-subscriber.workspace = true
+parking_lot.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-service.workspace = true
+windows-sys.workspace = true
+

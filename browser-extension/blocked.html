@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AEGIS AI Security - Tehdit Engellendi</title>
+  <link rel="stylesheet" href="blocked.css">
+</head>
+<body>
+  <div class="card">
+    <div class="icon-wrap">
+      <img src="icons/icon-48.png" alt="AEGIS Shield" style="width: 52px; height: 52px; object-fit: contain; filter: drop-shadow(0 0 12px rgba(244, 63, 94, 0.6));">
+    </div>
+
+    <h1>Güvenlik Tehdidi Engellendi</h1>
+    <p class="subtitle">AEGIS AI Web Shield bu web sayfasına erişimi engelledi.</p>
+
+    <div class="info-box">
+      <div class="info-row">
+        <span class="info-label">Engellenen Alan Adı:</span>
+        <span id="target-domain" class="info-val">bilinmiyor</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Tehdit Türü:</span>
+        <span id="threat-category" class="info-val text-red">Zararlı Yazılım / Oltalama</span>
+      </div>
+      <div class="info-row">
+        <span class="info-label">Kalkan:</span>
+        <span class="info-val">AEGIS Local Threat Feed</span>
+      </div>
+    </div>
+
+    <p class="warning-text">
+      Bu web sitesi cihazınıza kötü amaçlı yazılım bulaştırma, kimlik bilgilerinizi ele geçirme veya yetkisiz C2 sunucularına veri sızdırma riski taşımaktadır.
+    </p>
+
+    <div class="actions">
+      <button id="btn-back" class="btn btn-primary">Güvenli Sayfaya Geri Dön</button>
+      <button id="btn-details" class="btn btn-secondary">Ayrıntılar</button>
+    </div>
+
+    <div id="details-panel" class="details-panel hidden">
+      <p>Bu eylem, yerel AEGIS AI Security motorunun güvenli olmayan alan adları listesi tarafından otomatik olarak tetiklenmiştir. Hiçbir tarama verisi dış sunuculara gönderilmemiştir.</p>
+    </div>
+  </div>
+
+  <script src="blocked.js"></script>
+</body>
+</html>
+

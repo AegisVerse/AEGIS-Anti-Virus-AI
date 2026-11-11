@@ -1,0 +1,20 @@
+[package]
+name = "aegis-updater"
+description = "Secure update manager for YARA rules, hash reputation, and engine signatures for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+aegis-yara.workspace = true
+aegis-heuristics.workspace = true
+ed25519-dalek.workspace = true
+chrono.workspace = true
+parking_lot.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+

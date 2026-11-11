@@ -1,0 +1,20 @@
+{
+  "version": "2026.11.1",
+  "source": "AEGIS AI Security curated local database",
+  "license": "Apache-2.0",
+  "entries": [
+    {
+      "sha256": "275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f",
+      "name": "EICAR-Standard-Antivirus-Test-File",
+      "severity": "high",
+      "description": "Standard 68-byte EICAR anti-malware test file"
+    },
+    {
+      "sha256": "131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267",
+      "name": "EICAR-Standard-Antivirus-Test-File-CRLF",
+      "severity": "high",
+      "description": "EICAR test file with trailing CRLF (70 bytes)"
+    }
+  ]
+}
+

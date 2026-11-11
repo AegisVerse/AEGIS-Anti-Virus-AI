@@ -1,0 +1,33 @@
+[package]
+name = "aegis-ipc"
+description = "Authenticated named pipe IPC client and server for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+aegis-yara.workspace = true
+aegis-heuristics.workspace = true
+aegis-scanner.workspace = true
+aegis-quarantine.workspace = true
+aegis-behavior.workspace = true
+aegis-monitor.workspace = true
+aegis-network.workspace = true
+aegis-audit.workspace = true
+aegis-ai.workspace = true
+aegis-remediation.workspace = true
+aegis-updater.workspace = true
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+parking_lot.workspace = true
+tracing.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true

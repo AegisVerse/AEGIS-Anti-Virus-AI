@@ -1,0 +1,79 @@
+================================================================================
+AEGIS AI SECURITY - PROPRIETARY & DEFENSIVE COMMUNITY LICENSE
+================================================================================
+
+Copyright (c) 2026 AEGIS AI Security & Kaan.
+All Rights Reserved.
+
+IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING,
+INSTALLING, COPYING, OR USING THIS SOFTWARE.
+
+--------------------------------------------------------------------------------
+1. GRANT OF FREE PERSONAL AND DEFENSIVE USE
+--------------------------------------------------------------------------------
+Subject to the terms and restrictions of this Agreement, the Author hereby grants
+you a personal, non-exclusive, non-transferable, royalty-free license to download,
+install, execute, and run the binary executable forms of AEGIS AI Security 
+("Software") solely for legitimate endpoint defense, antivirus protection, and 
+personal security monitoring on Windows operating systems.
+
+--------------------------------------------------------------------------------
+2. SOURCE CODE INSPECTION RIGHTS
+--------------------------------------------------------------------------------
+If and to the extent source code is made accessible, you are permitted to read, 
+inspect, and audit the source code solely for the purpose of verifying security 
+integrity, absence of malicious functionality, and educational research. 
+Access to view source code DOES NOT grant any right to re-license, sell, fork, 
+re-package, or distribute the source code or derivative works.
+
+--------------------------------------------------------------------------------
+3. STRICT RESTRICTIONS AND PROHIBITIONS
+--------------------------------------------------------------------------------
+You expressly agree NOT to, directly or indirectly:
+  (a) Rebrand, rename, or claim authorship/ownership of the Software, in whole 
+      or in part.
+  (b) Distribute, publish, mirror, sub-license, rent, lease, or commercially 
+      exploit the Software, its source code, or its compiled binaries without 
+      prior express written consent from the Copyright Holder.
+  (c) Create derivative products, clones, or competing distributions derived from 
+      this codebase under any other trademark or brand identity.
+  (d) Remove, alter, or obscure any copyright notices, trademarks, digital watermarks, 
+      or proprietary notices placed within the Software or documentation.
+  (e) Weaponize, alter, or repurpose the Software to disable native operating system 
+      protections, harvest credentials, bypass security boundaries, or create malware.
+
+--------------------------------------------------------------------------------
+4. INTELLECTUAL PROPERTY & TRADEMARKS
+--------------------------------------------------------------------------------
+All title, ownership, trademarks, service marks, logos ("AEGIS", "AEGIS AI Security"), 
+and intellectual property rights in and to the Software, user interface, graphics, 
+and documentation remain the exclusive property of the Author. This License does 
+NOT grant any rights to use the Author's trademarks, logos, or commercial identifiers.
+
+--------------------------------------------------------------------------------
+5. THIRD-PARTY NOTICES
+--------------------------------------------------------------------------------
+Certain third-party libraries integrated into this project (such as YARA-X, SQLite, 
+Tokio, React, and Lucide) are distributed under their respective open-source 
+licenses (Apache 2.0, MIT, BSD, ISC). Nothing in this Agreement restricts your rights 
+under the specific terms applicable to those independent third-party libraries.
+
+--------------------------------------------------------------------------------
+6. DISCLAIMER OF WARRANTIES & LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR 
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, OR OTHER 
+LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE 
+OR OTHER DEALINGS IN THE SOFTWARE.
+
+--------------------------------------------------------------------------------
+7. ENFORCEMENT & TERMINATION
+--------------------------------------------------------------------------------
+Any unauthorized copying, distribution, rebranding, or commercial exploitation 
+constitutes copyright infringement and will result in immediate termination of 
+this license, legal takedown requests (including DMCA notices), and potential 
+statutory civil damages.
+================================================================================
+

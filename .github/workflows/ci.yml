@@ -1,0 +1,82 @@
+name: AEGIS AI Security CI
+
+on:
+  push:
+    branches: [ "main", "master", "develop" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  test-and-verify:
+    name: Build & Verify (Windows x64)
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Rust stable
+        uses: dtolnay/rust-toolchain@stable
+        with:
+          components: rustfmt, clippy
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+          cache-dependency-path: 'apps/desktop/package-lock.json'
+
+      - name: Cache Cargo Dependencies
+        uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-cargo-
+
+      - name: Check Environment
+        shell: powershell
+        run: .\scripts\check-environment.ps1
+
+      - name: Run Backend Rust Tests
+        shell: powershell
+        run: cargo test --workspace -- --nocapture
+
+      - name: Install Desktop Frontend Dependencies
+        shell: powershell
+        run: |
+          cd apps/desktop
+          npm ci
+
+      - name: Run Frontend Typecheck
+        shell: powershell
+        run: |
+          cd apps/desktop
+          npm run typecheck
+
+      - name: Run Frontend Vitest Suite
+        shell: powershell
+        run: |
+          cd apps/desktop
+          npm test
+
+      - name: Build Frontend Production Bundle
+        shell: powershell
+        run: |
+          cd apps/desktop
+          npm run build
+
+      - name: Build Release Binaries
+        shell: powershell
+        run: .\scripts\build-release.ps1 -SkipTauriBundle
+
+      - name: Verify Release Artifacts
+        shell: powershell
+        run: .\scripts\verify-release.ps1
+

@@ -1,0 +1,121 @@
+{
+  "name": "aegis-desktop",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "electron/main.cjs",
+  "description": "AEGIS AI Security desktop UI (Electron & Tauri + React)",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "electron": "electron electron/main.cjs",
+    "electron:dev": "concurrently -k \"vite\" \"wait-on tcp:1420 && electron electron/main.cjs --dev\"",
+    "electron:build": "npm run build && electron-builder --win --x64",
+    "pack": "npm run build && electron-builder --dir"
+  },
+  "author": "AegisVerse",
+  "build": {
+    "appId": "com.aegis.security",
+    "productName": "AEGIS AI Security",
+    "electronVersion": "45.3.0",
+    "directories": {
+      "output": "../../release/electron"
+    },
+    "extraResources": [
+      {
+        "from": "../../release/aegis-service.exe",
+        "to": "aegis-service.exe"
+      },
+      {
+        "from": "../../release/rules",
+        "to": "rules"
+      },
+      {
+        "from": "../../browser-extension",
+        "to": "browser-extension"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "portable",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "public/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "allowElevation": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AEGIS AI Security",
+      "artifactName": "${productName} Setup ${version}.${ext}",
+      "license": "build/license_tr.txt",
+      "installerIcon": "public/icon.ico",
+      "uninstallerIcon": "public/icon.ico",
+      "installerHeaderIcon": "public/icon.ico",
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": true
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "package.json"
+    ]
+  },
+  "dependencies": {
+    "@radix-ui/react-dialog": "1.3.1",
+    "@tanstack/react-query": "5.107.1",
+    "@tauri-apps/api": "2.12.4",
+    "@tauri-apps/plugin-dialog": "2.8.4",
+    "clsx": "2.1.1",
+    "lucide-react": "1.71.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "recharts": "3.10.1",
+    "zustand": "5.1.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@tailwindcss/vite": "4.3.5",
+    "@tauri-apps/cli": "2.12.4",
+    "@testing-library/dom": "10.4.2",
+    "@testing-library/jest-dom": "7.0.1",
+    "@testing-library/react": "16.3.3",
+    "@testing-library/user-event": "14.6.9",
+    "@types/node": "26.6.6",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "concurrently": "^9.1.2",
+    "electron": "45.3.0",
+    "electron-builder": "^25.1.8",
+    "eslint": "10.14.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.14.0",
+    "jsdom": "31.0.0",
+    "tailwindcss": "4.3.5",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0",
+    "wait-on": "^8.0.2"
+  }
+}

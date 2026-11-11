@@ -1,0 +1,25 @@
+[package]
+name = "aegis-scanner"
+description = "File scanning engine for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+aegis-yara.workspace = true
+aegis-heuristics.workspace = true
+zip.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+parking_lot.workspace = true
+crossbeam-channel.workspace = true
+tracing.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+

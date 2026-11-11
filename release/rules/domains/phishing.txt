@@ -1,0 +1,8 @@
+# name: AEGIS Phishing & Deceptive Domain List
+# category: phishing
+# source: AEGIS AI Security (seed test list)
+# license: Apache-2.0
+aegis-test-phishing.invalid
+aegis-test-credential-harvest.invalid
+login-verify-security-check.invalid
+

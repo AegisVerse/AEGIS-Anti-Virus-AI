@@ -1,0 +1,29 @@
+{
+  "name": "aegis-ai-security",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AEGIS AI Security - Local-First Windows 10/11 Endpoint Protection & Antivirus",
+  "workspaces": [
+    "apps/desktop"
+  ],
+  "scripts": {
+    "dev": "powershell -ExecutionPolicy Bypass -File ./scripts/dev.ps1",
+    "build": "powershell -ExecutionPolicy Bypass -File ./scripts/build-release.ps1",
+    "test": "powershell -ExecutionPolicy Bypass -File ./scripts/run-tests.ps1",
+    "check-env": "powershell -ExecutionPolicy Bypass -File ./scripts/check-environment.ps1",
+    "verify-release": "powershell -ExecutionPolicy Bypass -File ./scripts/verify-release.ps1"
+  },
+  "keywords": [
+    "antivirus",
+    "endpoint-protection",
+    "security",
+    "yara",
+    "rust",
+    "tauri",
+    "windows",
+    "local-ai"
+  ],
+  "author": "AegisVerse",
+  "license": "Proprietary"
+}
+

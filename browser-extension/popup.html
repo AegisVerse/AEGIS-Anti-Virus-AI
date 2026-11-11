@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AEGIS AI Web & Ad Shield</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <div class="brand">
+      <img src="icons/icon-48.png" alt="AEGIS" class="logo-img">
+      <div>
+        <div class="brand-title">AEGIS WEB SHIELD</div>
+        <div class="brand-sub">Akıllı Reklam & Zararlı Kalkanı</div>
+      </div>
+    </div>
+    <div id="status-badge" class="badge badge-active">AKTİF</div>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-box">
+      <span class="stat-label">Reklamlar</span>
+      <span id="stat-ads" class="stat-value text-cyan">0</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-label">Pop-up Sekme</span>
+      <span id="stat-popups" class="stat-value text-purple">0</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-label">Zararlı</span>
+      <span id="stat-malware" class="stat-value text-red">0</span>
+    </div>
+    <div class="stat-box">
+      <span class="stat-label">Toplam</span>
+      <span id="stat-total" class="stat-value text-emerald">0</span>
+    </div>
+  </div>
+
+  <div class="controls-card">
+    <label class="toggle-row">
+      <div class="toggle-info">
+        <span class="toggle-label">Reklam ve Banner Kalkanı</span>
+        <span class="toggle-desc">Can sıkıcı reklamları ve video afişlerini engeller</span>
+      </div>
+      <input type="checkbox" id="toggle-ads" checked>
+      <span class="slider"></span>
+    </label>
+
+    <label class="toggle-row">
+      <div class="toggle-info">
+        <span class="toggle-label">Açılan Pop-up Sekmeleri Engelle</span>
+        <span class="toggle-desc">İzinsiz açılan yeni sekmeleri anında kapatır</span>
+      </div>
+      <input type="checkbox" id="toggle-popups" checked>
+      <span class="slider"></span>
+    </label>
+
+    <label class="toggle-row">
+      <div class="toggle-info">
+        <span class="toggle-label">Zararlı Link ve Oltalama Koruması</span>
+        <span class="toggle-desc">Sahte güncellemeleri ve virüslü siteleri bloklar</span>
+      </div>
+      <input type="checkbox" id="toggle-malware" checked>
+      <span class="slider"></span>
+    </label>
+
+    <label class="toggle-row">
+      <div class="toggle-info">
+        <span class="toggle-label">Gizlilik ve İzleyici Kalkanı</span>
+        <span class="toggle-desc">Web telemetrisini ve takipçileri engeller</span>
+      </div>
+      <input type="checkbox" id="toggle-trackers" checked>
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="current-site-box">
+    <div class="site-header">
+      <span class="site-label">Mevcut Alan Adı:</span>
+      <span id="site-status-text" class="text-emerald">Korumada ✓</span>
+    </div>
+    <div id="current-domain" class="site-domain">...</div>
+  </div>
+
+  <div class="footer">
+    <button id="btn-options" class="footer-btn">Detaylı Ayarlar & Kayıtlar</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# Rust build artifacts
+target/
+**/*.rs.bk
+Cargo.lock
+
+# Node / Web dependencies & bundles
+node_modules/
+dist/
+.vite/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Tauri artifacts
+apps/desktop/src-tauri/target/
+
+# OS generated files & caches
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# SQLite local test databases
+*.db
+*.db-wal
+*.db-shm
+*.db.bak
+*.corrupt.*
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Releases and unpacked binaries
+release/electron/win-unpacked/
+release/electron/*.blockmap
+release/electron/builder-debug.yml
+release/**/*.exe
+release/*.exe
+*.exe
+temp_out.txt
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+

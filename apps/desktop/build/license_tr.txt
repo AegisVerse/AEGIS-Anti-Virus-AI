@@ -1,0 +1,55 @@
+================================================================================
+AEGIS AI SECURITY - SON KULLANICI LİSANS VE GÜVENLİK SÖZLEŞMESİ (EULA)
+================================================================================
+
+Lütfen AEGIS AI Security ("Yazılım") kurulumuna devam etmeden önce bu sözleşmeyi
+dikkatlice okuyunuz. Kuruluma devam ederek ve "Kabul Ediyorum" seçeneğini
+işaretleyerek bu sözleşmenin tüm şartlarını kabul etmiş sayılırsınız.
+
+1. GENEL BİLGİ VE YAZILIMIN AMACI
+AEGIS AI Security; Windows 10 ve Windows 11 işletim sistemleri için geliştirilmiş,
+yerel öncelikli (local-first), bağımsız ve çok katmanlı bir uç nokta koruma (EDR)
+ve antivirüs güvenlik çözümüdür. Yazılım; YARA-X kuralları, PE sezgisel analizi,
+fidye yazılımı koruma kalkanı, RAT/casus yazılım tespit motoru ve bellek denetimi
+bileşenlerini içerir.
+
+2. SAVUNMA ODAKLI VE ETİK KULLANIM İLKESİ
+Bu yazılım kesinlikle savunma ve güvenlik amaçlıdır. Yazılım:
+- Gizli uzaktan erişim, izleme veya veri toplama bileşeni içermez.
+- Windows Defender, Windows Güvenlik Duvarı veya Kullanıcı Hesabı Denetimi (UAC)
+  gibi yerel Windows güvenlik mekanizmalarını devre dışı bırakmaz veya zayıflatmaz.
+- Kullanıcı dosyalarını yalnızca yerel tehdit analizi ve karantina amacıyla işler.
+- Kötü niyetli saldırı, sızma veya zararlı yazılım dağıtımı amacıyla kullanılamaz.
+
+3. YEREL GİZLİLİK VE VERİ GÜVENLİĞİ
+AEGIS AI Security, "Sıfır Telemetri" ve "Yerel Analiz" prensibiyle çalışır.
+Taranan dosyalar, adli olay günlükleri, karantina veritabanı ve tespit kayıtları
+yalnızca yerel bilgisayarınızda SQLite veritabanında saklanır. Hiçbir dosya,
+şifre, kişisel bilgi veya sistem verisi harici sunuculara veya bulut servislerine
+aktarılmaz.
+
+4. GARANTİ REDDİ VE SORUMLULUK SINIRI
+Yazılım "OLDUĞU GİBİ" (AS-IS) sağlanmaktadır. Siber güvenlik alanındaki sürekli
+gelişen tehdit ekosistemi gereği, hiçbir güvenlik ürünü tüm zararlı yazılımlara
+karşı %100 koruma garantisi veremez. Geliştirici ekip; dolaylı, arızi veya
+tesadüfi veri kayıplarından sorumlu tutulamaz. Kullanıcı, kritik sistem dosyalarının
+yedeklenmesinden kendisi sorumludur.
+
+5. KARANTİNA VE TEHDİT MÜDAHALESİ
+Tespit edilen şüpheli dosyalar, sistem güvenliğini sağlamak için rastgele XOR
+anahtarı ile şifrelenerek karantina kasasında izole edilir. Kullanıcı, arayüz
+üzerinden dilediği zaman dosyaları inceleyebilir, orijinal konumuna geri yükleyebilir
+veya kalıcı olarak silebilir.
+
+6. TELİF HAKKI, MÜLKİYET VE KOPYALAMA YASAĞI
+AEGIS AI Security bireysel kullanıcılar için ücretsiz bir güvenlik yazılımıdır.
+Tüm mülkiyet, ticari marka ve telif hakları AegisVerse adına
+saklıdır. Yazılımı veya kaynak kodlarını kopyalamak, tersine mühendislikle yeniden
+adlandırmak, logosunu değiştirip kendi adına yeniden dağıtmak, kiralamak veya satmak
+kesinlikle yasaktır. İzinsiz kopyalama durumunda uluslararası telif hakları ve DMCA
+kapsamında yasal işlem başlatılır.
+
+Bu sözleşmeyi onaylayarak kurulumu tamamladığınızda, AEGIS AI Security koruma
+katmanlarının sisteminizde yerel olarak çalıştırılmasına izin vermiş olursunuz.
+================================================================================
+

@@ -1,0 +1,20 @@
+[package]
+name = "aegis-yara"
+description = "YARA-X rule compilation and scanning engine for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+yara-x.workspace = true
+rsa = { version = "0.10", features = ["pkcs1v15"] }
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+parking_lot.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+

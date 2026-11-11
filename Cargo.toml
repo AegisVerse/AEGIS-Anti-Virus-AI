@@ -1,0 +1,104 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/aegis-common",
+    "crates/aegis-storage",
+    "crates/aegis-yara",
+    "crates/aegis-heuristics",
+    "crates/aegis-scanner",
+    "crates/aegis-quarantine",
+    "crates/aegis-behavior",
+    "crates/aegis-monitor",
+    "crates/aegis-network",
+    "crates/aegis-audit",
+    "crates/aegis-ai",
+    "crates/aegis-remediation",
+    "crates/aegis-updater",
+    "crates/aegis-ipc",
+    "crates/aegis-service",
+    "apps/desktop/src-tauri",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+license = "Apache-2.0"
+authors = ["AegisVerse"]
+repository = "https://github.com/AegisVerse/aegis-ai-security"
+rust-version = "1.80"
+
+[workspace.dependencies]
+aegis-common = { path = "crates/aegis-common" }
+aegis-storage = { path = "crates/aegis-storage" }
+aegis-yara = { path = "crates/aegis-yara" }
+aegis-heuristics = { path = "crates/aegis-heuristics" }
+aegis-scanner = { path = "crates/aegis-scanner" }
+aegis-quarantine = { path = "crates/aegis-quarantine" }
+aegis-behavior = { path = "crates/aegis-behavior" }
+aegis-monitor = { path = "crates/aegis-monitor" }
+aegis-network = { path = "crates/aegis-network" }
+aegis-audit = { path = "crates/aegis-audit" }
+aegis-ai = { path = "crates/aegis-ai" }
+aegis-remediation = { path = "crates/aegis-remediation" }
+aegis-updater = { path = "crates/aegis-updater" }
+aegis-ipc = { path = "crates/aegis-ipc" }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+anyhow = "1"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+tracing-appender = "0.2"
+chrono = { version = "0.4", default-features = false, features = ["clock", "serde", "std"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+sha2 = "0.10"
+hex = "0.4"
+rand = "0.8"
+parking_lot = "0.12"
+crossbeam-channel = "0.5"
+tokio = { version = "1", features = ["rt-multi-thread", "net", "io-util", "time", "sync", "macros"] }
+rusqlite = { version = "0.32", features = ["bundled"] }
+yara-x = "1.23.0"
+rsa = { version = "0.10", features = ["pkcs1v15"] }
+goblin = { version = "0.9", default-features = false, features = ["std", "pe32", "pe64"] }
+zip = { version = "2", default-features = false, features = ["deflate"] }
+notify = "8"
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+base64 = "0.22"
+ureq = { version = "2", features = ["json"] }
+tempfile = "3"
+windows-service = "0.8"
+windows-sys = { version = "0.59", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Security_Authorization",
+    "Win32_Security_WinTrust",
+    "Win32_Security_Cryptography",
+    "Win32_Storage_FileSystem",
+    "Win32_System_Diagnostics_ToolHelp",
+    "Win32_System_Threading",
+    "Win32_System_ProcessStatus",
+    "Win32_System_Pipes",
+    "Win32_System_SystemInformation",
+    "Win32_System_Registry",
+    "Win32_System_EventLog",
+    "Win32_System_Memory",
+    "Win32_System_Com",
+    "Win32_NetworkManagement_IpHelper",
+    "Win32_Networking_WinSock",
+    "Win32_UI_Shell",
+    "Win32_UI_WindowsAndMessaging",
+    "Win32_System_Power",
+    "Win32_System_RemoteDesktop",
+    "Win32_System_IO",
+] }
+
+[profile.release]
+lto = "thin"
+codegen-units = 4
+strip = "symbols"
+panic = "unwind"
+
+[profile.dev.package."*"]
+opt-level = 1

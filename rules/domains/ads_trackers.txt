@@ -1,0 +1,25 @@
+# name: AEGIS Advertising & Tracking Domains
+# category: ads_trackers
+# source: AEGIS AI Security curated list
+# license: Apache-2.0
+doubleclick.net
+googlesyndication.com
+googleadservices.com
+adservice.google.com
+ads.yahoo.com
+adnxs.com
+rubiconproject.com
+pubmatic.com
+criteo.com
+outbrain.com
+taboola.com
+scorecardresearch.com
+quantserve.com
+moatads.com
+adsrvr.org
+openx.net
+casalemedia.com
+advertising.com
+aegis-test-ads.invalid
+aegis-test-tracker.invalid
+

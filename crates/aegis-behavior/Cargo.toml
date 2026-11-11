@@ -1,0 +1,20 @@
+[package]
+name = "aegis-behavior"
+description = "Behavior analysis, RAT hunter, and ransomware monitoring for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+parking_lot.workspace = true
+tracing.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+

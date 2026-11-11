@@ -1,0 +1,22 @@
+[package]
+name = "aegis-quarantine"
+description = "Secure quarantine vault with XOR obfuscation and atomic restoration for AEGIS AI Security"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+aegis-common.workspace = true
+aegis-storage.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+rand.workspace = true
+hex.workspace = true
+tracing.workspace = true
+
+[target.'cfg(windows)'.dependencies]
+windows-sys.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+

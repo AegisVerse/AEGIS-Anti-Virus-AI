@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>AEGIS AI Web Shield - Yapılandırma</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.2" class="brand-icon">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+          <path d="M9 12l2 2 4-4"/>
+        </svg>
+        <div>
+          <h1>AEGIS AI Web Shield</h1>
+          <p class="subtitle">Uç Nokta Web Güvenliği & Alan Adı Filtresi</p>
+        </div>
+      </div>
+      <div class="header-tag">Yerel & Bağımsız</div>
+    </header>
+
+    <div class="notice-banner">
+      <strong>Güvenlik İlkesi:</strong> Bu eklenti yerel kural kümeleri (DeclarativeNetRequest) kullanarak tarayıcı trafiğinizi cihazınızda korur. Tarama geçmişiniz hiçbir uzak sunucuya aktarılmaz. Microsoft Defender SmartScreen ile uyumlu çalışır.
+    </div>
+
+    <div class="card">
+      <h2>Koruma Katmanları</h2>
+      <div class="setting-item">
+        <div>
+          <div class="setting-title">Zararlı ve C2 Alan Adı Engelleme</div>
+          <div class="setting-desc">Bilinen Truva atı, fidye yazılımı ve komuta kontrol sunucularını engeller.</div>
+        </div>
+        <input type="checkbox" id="opt-malware" class="switch">
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <div class="setting-title">İzleyici & Telemetri Kalkanı</div>
+          <div class="setting-desc">Kullanıcı hareketlerini profilleyen üçüncü taraf izleme betiklerini durdurur.</div>
+        </div>
+        <input type="checkbox" id="opt-trackers" class="switch">
+      </div>
+
+      <div class="setting-item">
+        <div>
+          <div class="setting-title">Reklam & Sahte Yönlendirmeler</div>
+          <div class="setting-desc">Zararlı reklam ağlarını ve yanıltıcı sayfa yönlendirmelerini engeller.</div>
+        </div>
+        <input type="checkbox" id="opt-ads" class="switch">
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header-row">
+        <h2>Son Engelleme Günlüğü</h2>
+        <button id="btn-reset-stats" class="btn btn-secondary">İstatistikleri Sıfırla</button>
+      </div>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Zaman Damgası</th>
+              <th>Alan Adı</th>
+              <th>Kategori</th>
+              <th>Durum</th>
+            </tr>
+          </thead>
+          <tbody id="logs-tbody">
+            <tr>
+              <td colspan="4" class="text-center text-muted">Kayıt bulunamadı.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
+

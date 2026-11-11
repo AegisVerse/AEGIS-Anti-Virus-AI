@@ -1,0 +1,39 @@
+================================================================================
+AEGIS AI SECURITY - END USER LICENSE AND SECURITY AGREEMENT (EULA)
+================================================================================
+
+Please read the following License and Security Agreement carefully before
+installing AEGIS AI Security ("Software"). By continuing the installation and
+selecting "I Accept", you agree to be bound by the terms of this Agreement.
+
+1. PURPOSE AND NATURE OF SOFTWARE
+AEGIS AI Security is a local-first, multi-engine Windows 10/11 antivirus and
+endpoint protection software designed to detect malware, ransomware, Trojans,
+RATs, and suspicious system activity using YARA-X rules, behavioral shields,
+and PE heuristics.
+
+2. DEFENSIVE AND ETHICAL SECURITY PRINCIPLES
+This software is strictly defensive. It will never implement covert remote access,
+credential harvesting, or surveillance. It will never disable or weaken native
+Windows defenses including Microsoft Defender, Windows Firewall, and UAC.
+
+3. PRIVACY AND LOCAL PROCESSING
+AEGIS operates with a strict zero-cloud-telemetry policy. All security scans,
+logs, quarantine databases, and event telemetry remain 100% on your local machine.
+No personal files, passwords, or system information are ever transmitted to any
+remote server or cloud AI service.
+
+4. DISCLAIMER OF WARRANTY
+The software is provided "AS IS", without warranty of any kind. No security
+product can guarantee 100% protection against all potential threats. The user is
+responsible for maintaining appropriate backups of important personal files.
+
+5. QUARANTINE AND REMEDIATION
+Detected threats are safely isolated using randomized XOR encryption in the local
+quarantine vault. Users maintain full control to inspect, restore, or permanently
+delete quarantined items through the application interface.
+
+By accepting these terms, you authorize AEGIS AI Security to operate locally on
+your system to protect your files and system integrity.
+================================================================================
+
