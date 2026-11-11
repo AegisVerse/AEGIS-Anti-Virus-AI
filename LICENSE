@@ -1,79 +1,85 @@
 ================================================================================
-AEGIS AI SECURITY - PROPRIETARY & DEFENSIVE COMMUNITY LICENSE
+AEGIS AI SECURITY - PROPRIETARY & DEFENSIVE SOURCE-AVAILABLE LICENSE
 ================================================================================
 
-Copyright (c) 2026 AEGIS AI Security & Kaan.
-All Rights Reserved.
+Copyright (c) 2026 AegisVerse. All Rights Reserved.
+Author / Organization: AegisVerse
+Official Contact: krlkaan@outlook.com
 
-IMPORTANT: PLEASE READ THIS LICENSE AGREEMENT CAREFULLY BEFORE DOWNLOADING,
-INSTALLING, COPYING, OR USING THIS SOFTWARE.
-
---------------------------------------------------------------------------------
-1. GRANT OF FREE PERSONAL AND DEFENSIVE USE
---------------------------------------------------------------------------------
-Subject to the terms and restrictions of this Agreement, the Author hereby grants
-you a personal, non-exclusive, non-transferable, royalty-free license to download,
-install, execute, and run the binary executable forms of AEGIS AI Security 
-("Software") solely for legitimate endpoint defense, antivirus protection, and 
-personal security monitoring on Windows operating systems.
-
---------------------------------------------------------------------------------
-2. SOURCE CODE INSPECTION RIGHTS
---------------------------------------------------------------------------------
-If and to the extent source code is made accessible, you are permitted to read, 
-inspect, and audit the source code solely for the purpose of verifying security 
-integrity, absence of malicious functionality, and educational research. 
-Access to view source code DOES NOT grant any right to re-license, sell, fork, 
-re-package, or distribute the source code or derivative works.
-
---------------------------------------------------------------------------------
-3. STRICT RESTRICTIONS AND PROHIBITIONS
---------------------------------------------------------------------------------
-You expressly agree NOT to, directly or indirectly:
-  (a) Rebrand, rename, or claim authorship/ownership of the Software, in whole 
-      or in part.
-  (b) Distribute, publish, mirror, sub-license, rent, lease, or commercially 
-      exploit the Software, its source code, or its compiled binaries without 
-      prior express written consent from the Copyright Holder.
-  (c) Create derivative products, clones, or competing distributions derived from 
-      this codebase under any other trademark or brand identity.
-  (d) Remove, alter, or obscure any copyright notices, trademarks, digital watermarks, 
-      or proprietary notices placed within the Software or documentation.
-  (e) Weaponize, alter, or repurpose the Software to disable native operating system 
-      protections, harvest credentials, bypass security boundaries, or create malware.
-
---------------------------------------------------------------------------------
-4. INTELLECTUAL PROPERTY & TRADEMARKS
---------------------------------------------------------------------------------
-All title, ownership, trademarks, service marks, logos ("AEGIS", "AEGIS AI Security"), 
-and intellectual property rights in and to the Software, user interface, graphics, 
-and documentation remain the exclusive property of the Author. This License does 
-NOT grant any rights to use the Author's trademarks, logos, or commercial identifiers.
-
---------------------------------------------------------------------------------
-5. THIRD-PARTY NOTICES
---------------------------------------------------------------------------------
-Certain third-party libraries integrated into this project (such as YARA-X, SQLite, 
-Tokio, React, and Lucide) are distributed under their respective open-source 
-licenses (Apache 2.0, MIT, BSD, ISC). Nothing in this Agreement restricts your rights 
-under the specific terms applicable to those independent third-party libraries.
-
---------------------------------------------------------------------------------
-6. DISCLAIMER OF WARRANTIES & LIMITATION OF LIABILITY
---------------------------------------------------------------------------------
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS 
-FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. IN NO EVENT SHALL THE AUTHOR OR 
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, OR OTHER 
-LIABILITY ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE 
-OR OTHER DEALINGS IN THE SOFTWARE.
-
---------------------------------------------------------------------------------
-7. ENFORCEMENT & TERMINATION
---------------------------------------------------------------------------------
-Any unauthorized copying, distribution, rebranding, or commercial exploitation 
-constitutes copyright infringement and will result in immediate termination of 
-this license, legal takedown requests (including DMCA notices), and potential 
-statutory civil damages.
+================================================================================
+🚨 STRICT LEGAL WARNING & ANTI-PIRACY / REBRANDING CLAUSE (HUKUKİ YASAL UYARI)
 ================================================================================
 
+[TR - TÜRKÇE YASAL BİLDİRİM]
+Bu projenin tüm kaynak kodları, arayüz tasarımları, logoları, yapay zeka analiz 
+modelleri ve antivirüs motoru AegisVerse'e aittir.
+
+Bu projenin kodlarını kopyalamak, çalmak, adını/logosunu değiştirip kendi adına 
+yeniden dağıtmak (rebranding/cloning), ücretli veya ücretsiz satmak, ticari bir 
+ürün haline getirmek veya yetkisiz türevlerini oluşturmak KESİNLİKLE YASAKTIR.
+
+İzinsiz kopyalama, forkladıktan sonra isim değiştirerek dağıtma veya ticari sömürü 
+tespit edildiği anda:
+1. Uluslararası Telif Hakları Kanunları, DMCA (Digital Millennium Copyright Act) ve 
+   WIPO (Dünya Fikri Mülkiyet Örgütü) kapsamında anında resmi telif ihtarnamesi ve 
+   Global Takedown (kaldırma) işlemi uygulanır.
+2. Fikri mülkiyet hırsızlığı sebebiyle yetkili mahkemelerde maddi ve manevi tazminat 
+   davaları açılır.
+
+[EN - INTERNATIONAL LEGAL NOTICE]
+The entire source code, user interface, binary distributions, trademarks, branding, 
+and detection algorithms of AEGIS AI Security are the proprietary intellectual property 
+of AegisVerse.
+
+Any unauthorized copying, cloning, rebranding, reselling, commercial exploitation, 
+sub-licensing, or distribution of this software under another name, author, or 
+organization is STRICTLY FORBIDDEN.
+
+Violations will be subject to immediate legal enforcement:
+1. Formal DMCA Takedown Notices and global repository/website removal requests under 
+   the Digital Millennium Copyright Act and WIPO treaties.
+2. Civil litigation for statutory copyright damages, unfair competition, and intellectual 
+   property infringement in competent jurisdictions.
+
+================================================================================
+1. PUBLIC TRANSPARENCY & AUDIT RIGHTS (NEDEN AÇIK PAYLAŞILDI?)
+================================================================================
+This repository is made publicly accessible strictly to establish community trust, 
+security transparency, peer review, and educational verification. Users and security 
+researchers are encouraged to audit the code to verify that AEGIS AI Security operates 
+strictly locally with:
+  - ZERO cloud telemetry or data exfiltration.
+  - ZERO hidden backdoors, spyware, or malicious functionality.
+  - 100% safe coexistence with native Windows defenses.
+
+Access to view, inspect, and audit this repository DOES NOT grant any right to re-license, 
+sell, re-package, fork for distribution, or commercially exploit this software.
+
+================================================================================
+2. GRANT OF FREE PERSONAL USE
+================================================================================
+Subject to this Agreement, AegisVerse grants individuals a personal, non-exclusive, 
+non-transferable, revocable, royalty-free license to download, install, and execute 
+the official binary forms of AEGIS AI Security solely for personal endpoint defense 
+and malware protection on Windows 10/11 operating systems.
+
+================================================================================
+3. STRICT PROHIBITIONS
+================================================================================
+You expressly agree NOT to:
+  (a) Rebrand, rename, or claim authorship/ownership of the Software, in whole or in part.
+  (b) Distribute, publish, mirror, sub-license, rent, lease, or commercially exploit 
+      the Software or its compiled binaries without prior written consent from AegisVerse.
+  (c) Create derivative products, clones, or competing distributions derived from this 
+      codebase under any other trademark or brand identity.
+  (d) Remove, alter, or obscure any copyright notices, trademarks, or digital watermarks.
+  (e) Weaponize or alter the Software to disable operating system protections, harvest 
+      credentials, bypass security boundaries, or create malware.
+
+================================================================================
+4. DISCLAIMER OF WARRANTIES
+================================================================================
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. 
+IN NO EVENT SHALL AEGISVERSE BE LIABLE FOR ANY CLAIM, DAMAGES, LOSS OF DATA, OR OTHER 
+LIABILITY ARISING FROM THE USE OR INABILITY TO USE THIS SOFTWARE.
+================================================================================
