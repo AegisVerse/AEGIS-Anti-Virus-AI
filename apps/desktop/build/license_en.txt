@@ -1,0 +1,50 @@
+﻿================================================================================
+AEGIS AI SECURITY - END USER LICENSE AND SECURITY AGREEMENT (EULA)
+================================================================================
+
+Please read the following License and Security Agreement carefully before
+installing AEGIS AI Security ("Software"). By continuing the installation and
+selecting "I Accept", you agree to be bound by the terms of this Agreement.
+
+1. GENERAL INFORMATION AND PURPOSE OF THE SOFTWARE
+AEGIS AI Security is a next-generation, local-first, multi-engine Windows 10/11
+endpoint detection and response (EDR) and antivirus solution developed by
+AegisVerse. The software features YARA-X rules, PE heuristic analysis, ransomware
+protection, RAT/spyware detection, and memory inspection engines.
+
+2. DEFENSIVE AND ETHICAL USAGE PRINCIPLES
+This software is strictly defensive. The software:
+- Does NOT contain any hidden remote access, spyware, or covert telemetry.
+- Does NOT disable or weaken native Windows security mechanisms such as
+  Windows Defender, Windows Firewall, or User Account Control (UAC).
+- Only processes user files locally for threat detection and quarantine.
+- Shall NEVER be used for malicious attack, penetration, or malware distribution.
+
+3. LOCAL PRIVACY AND DATA SECURITY
+AEGIS AI Security operates under a strict "Zero Cloud Telemetry" policy. Scanned
+files, forensic logs, quarantine vaults, and detection histories remain 100% on
+your local machine in an encrypted SQLite database. No personal files, passwords,
+or system metadata are ever sent to external cloud servers.
+
+4. DISCLAIMER OF WARRANTY AND LIMITATION OF LIABILITY
+The software is provided "AS IS", without warranty of any kind. Due to the evolving
+nature of cyber threats, no security tool can guarantee 100% immunity. The developers
+shall not be held liable for indirect or incidental data loss. Users are advised to
+maintain regular offline backups of essential data.
+
+5. QUARANTINE AND THREAT REMEDIATION
+Detected threats are safely isolated using randomized XOR key encryption within the
+quarantine vault. Users maintain full control to inspect, restore, or permanently
+delete files via the dashboard interface.
+
+6. COPYRIGHT, INTELLECTUAL PROPERTY AND ANTI-PIRACY
+AEGIS AI Security is provided free for individual personal security. All intellectual
+property, trademarks, algorithms, models, and branding are the exclusive property
+of AegisVerse. Rebranding, reverse engineering, selling, renting, or unauthorized
+cloning of this software or its source code is strictly prohibited. Violators will
+face immediate global DMCA takedowns and legal claims under international copyright laws.
+
+By continuing the installation, you authorize AEGIS AI Security to operate locally
+on your machine to ensure system defense and threat mitigation.
+================================================================================
+

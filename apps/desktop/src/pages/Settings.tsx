@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Settings as SettingsIcon, Save, Shield, Cpu, Bell, HardDrive, Bot, Lock, Wifi, RefreshCw } from 'lucide-react';
+import { Settings as SettingsIcon, Save, Shield, Cpu, Bell, HardDrive, Bot, Lock, Wifi, RefreshCw, Globe, Check } from 'lucide-react';
 import { callAegis } from '../services/aegis';
-import { useAppStore } from '../stores/useAppStore';
+import { useAppStore, SUPPORTED_LANGUAGES, type Language } from '../stores/useAppStore';
 import type { Settings } from '../types/aegis';
 
 export function SettingsPage() {
@@ -70,6 +70,48 @@ export function SettingsPage() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {/* Language Selection Card */}
+        <div className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur-md space-y-4 md:col-span-2">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-bold text-white flex items-center gap-2">
+              <Globe className="w-4 h-4 text-cyan-400" />
+              <span>{language === 'tr' ? 'Uygulama Dili / Language' : 'Application Language'}</span>
+            </h3>
+            <span className="text-xs text-slate-400">
+              {SUPPORTED_LANGUAGES.find((l) => l.code === language)?.label} ({language.toUpperCase()})
+            </span>
+          </div>
+
+          <p className="text-xs text-slate-400">
+            {language === 'tr'
+              ? 'Tüm menüler, koruma başlıkları, bildirimler ve arayüz seçilen dilde anında güncellenir.'
+              : 'All menus, protection titles, alerts, and interface labels update instantly in your selected language.'}
+          </p>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 pt-2">
+            {SUPPORTED_LANGUAGES.map((item) => {
+              const isSelected = language === item.code;
+              return (
+                <button
+                  key={item.code}
+                  type="button"
+                  onClick={() => setLanguage(item.code)}
+                  className={`flex items-center justify-between p-3 rounded-xl border text-xs font-semibold transition-all cursor-pointer ${
+                    isSelected
+                      ? 'border-cyan-500 bg-cyan-500/10 text-cyan-300 shadow-md shadow-cyan-500/10'
+                      : 'border-slate-800 bg-slate-950/60 text-slate-400 hover:text-white hover:border-slate-700'
+                  }`}
+                >
+                  <span className="flex items-center gap-2">
+                    <span className="text-base">{item.flag}</span>
+                    <span>{item.label}</span>
+                  </span>
+                  {isSelected && <Check className="w-4 h-4 text-cyan-400" />}
+                </button>
+              );
+            })}
+          </div>
+        </div>
         {/* Core Protection Preferences */}
         <div className="p-6 rounded-2xl border border-slate-800 bg-slate-900/40 backdrop-blur-md space-y-4">
           <h3 className="text-sm font-bold text-white flex items-center gap-2">

@@ -1,0 +1,28 @@
+﻿================================================================================
+AEGIS AI SECURITY - CONTRAT DE LICENCE ET DE SÉCURITÉ UTILISATEUR FINAL (CLUF)
+================================================================================
+
+Veuillez lire attentivement ce contrat avant d'installer AEGIS AI Security ("Logiciel").
+En poursuivant l'installation et en sélectionnant "J'accepte", vous acceptez l'intégralité
+des conditions suivantes.
+
+1. INFORMATIONS GÉNÉRALES ET OBJECTIF
+AEGIS AI Security est une suite de protection des terminaux (EDR) et un antivirus
+nouvelle génération pour Windows 10/11, fonctionnant entièrement en local ("Local-First"),
+conçue par AegisVerse.
+
+2. USAGE DÉFENSIF ET ÉTHIQUE
+Ce logiciel est exclusivement défensif :
+- Ne contient aucun accès à distance caché, logiciel espion ni télémétrie secrète.
+- Ne désactive ni n'affaiblit les défenses intégrées de Windows (Defender, Pare-feu).
+- Analyse les fichiers exclusivement sur votre machine locale.
+
+3. CONFIDENTIALITÉ ET SÉCURITÉ DES DONNÉES
+Politique stricte "Zéro Télémétrie Cloud". Aucune donnée personnelle, mot de passe
+ou fichier n'est transmis à des serveurs tiers.
+
+4. PROPRIÉTÉ INTELLECTUELLE ET PROTECTION DES DROITS
+Tous les droits et marques appartiennent exclusivement à AegisVerse. Toute copie,
+revente ou modification non autorisée est strictement interdite et fera l'objet
+de poursuites immédiates (DMCA / WIPO).
+================================================================================

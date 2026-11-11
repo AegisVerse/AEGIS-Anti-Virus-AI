@@ -60,7 +60,15 @@
       "createStartMenuShortcut": true,
       "shortcutName": "AEGIS AI Security",
       "artifactName": "${productName} Setup ${version}.${ext}",
-      "license": "build/license_tr.txt",
+      "displayLanguageSelector": true,
+      "installerLanguages": [
+        "tr_TR",
+        "en_US",
+        "de_DE",
+        "es_ES",
+        "fr_FR",
+        "ru_RU"
+      ],
       "installerIcon": "public/icon.ico",
       "uninstallerIcon": "public/icon.ico",
       "installerHeaderIcon": "public/icon.ico",

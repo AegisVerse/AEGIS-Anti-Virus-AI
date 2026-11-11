@@ -1,0 +1,34 @@
+﻿================================================================================
+AEGIS AI SECURITY - ENDBENUTZER-LIZENZ- UND SICHERHEITSVEREINBARUNG (EULA)
+================================================================================
+
+Bitte lesen Sie die folgende Vereinbarung sorgfältig durch, bevor Sie mit der
+Installation von AEGIS AI Security ("Software") fortfahren. Mit der Auswahl von
+"Ich akzeptiere" stimmen Sie allen Bedingungen dieser Vereinbarung zu.
+
+1. ALLGEMEINE INFORMATIONEN UND ZWECK DER SOFTWARE
+AEGIS AI Security ist eine moderne, lokale ("Local-First") Endpunktsicherheits- (EDR)
+und Antivirenlösung für Windows 10 und Windows 11 von AegisVerse. Die Software
+umfasst YARA-X-Regeln, heuristische PE-Analyse, Ransomware-Schutz, RAT-/Spyware-Erkennung
+und Speicherüberwachungsmodule.
+
+2. DEFENSIV- UND ETHIKPRINZIPIEN
+Diese Software dient ausschließlich der Systemverteidigung. Die Software:
+- Enthält keine verdeckten Fernzugriffe, Spyware oder versteckten Telemetriedienste.
+- Deaktiviert oder schwächt keine nativen Windows-Sicherheitsmechanismen (wie Defender).
+- Verarbeitet Dateien ausschließlich lokal für Bedrohungsanalysen und Quarantäne.
+
+3. LOKALER DATENSCHUTZ UND NULL TELEMETRIE
+AEGIS AI Security arbeitet nach dem Prinzip "Null Cloud-Telemetrie". Alle Scandaten,
+Ereignisprotokolle und Quarantäneeinträge verbleiben zu 100% lokal auf Ihrem Computer.
+Es werden niemals Dateien, Passwörter oder persönliche Daten an externe Server übertragen.
+
+4. HAFTUNGSAUSSCHLUSS
+Die Software wird "WIE BESEHEN" (AS-IS) bereitgestellt. AegisVerse haftet nicht für
+indirekte oder zufällige Datenverluste.
+
+5. URHEBERRECHT UND PIRATERIESCHUTZ
+Alle Rechte, Marken und Algorithmen gehören ausschließlich AegisVerse. Jedes unbefugte
+Kopieren, Umbenennen (Rebranding) oder kommerzielle Weiterverteilen ist strengstens untersagt
+und wird nach WIPO- und DMCA-Bestimmungen rechtlich verfolgt.
+================================================================================

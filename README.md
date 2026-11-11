@@ -30,7 +30,7 @@ AEGIS AI Security'yi hemen bilgisayarınıza kurup yeni nesil korumayı başlata
 > Tarayıcı koruma eklentisi (Brave, Chrome, Edge için YouTube reklam atlayıcı ve zararlı link kalkanı) uygulama ile birlikte otomatik olarak gelir; AEGIS masaüstü uygulamasının içinden doğrudan tek tıkla aktif edilebilir.
 > 
 > 🔒 **Dosya Bütünlüğü Doğrulama (SHA-256 Checksum):**  
-> `0FDCA25EA60E2F89427CB532BF8DCC680B2C982A327D68FE9A4C6A40B56400CD`
+> `0D9930E8C2BE5961FD06ED61A3E85B522C2DE5663301E324C354EEC4AE5F6D13`
 
 ---
 

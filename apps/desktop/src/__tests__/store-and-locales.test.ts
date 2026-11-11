@@ -1,28 +1,36 @@
 import { describe, it, expect, beforeEach } from 'vitest';
 import trLocale from '../locales/tr.json';
 import enLocale from '../locales/en.json';
-import { useAppStore } from '../stores/useAppStore';
+import deLocale from '../locales/de.json';
+import esLocale from '../locales/es.json';
+import frLocale from '../locales/fr.json';
+import ruLocale from '../locales/ru.json';
+import { useAppStore, SUPPORTED_LANGUAGES } from '../stores/useAppStore';
 
 describe('Localization parity', () => {
-  it('has identical top-level keys between TR and EN locales', () => {
-    const trKeys = Object.keys(trLocale).sort();
-    const enKeys = Object.keys(enLocale).sort();
-    expect(trKeys).toEqual(enKeys);
-  });
+  const allLocales = [trLocale, enLocale, deLocale, esLocale, frLocale, ruLocale];
 
-  it('contains expected categories in both languages', () => {
-    const requiredSections = ['app', 'nav', 'status', 'actions', 'common'];
-    for (const section of requiredSections) {
-      expect(trLocale).toHaveProperty(section);
-      expect(enLocale).toHaveProperty(section);
+  it('has identical top-level keys across all locales', () => {
+    const trKeys = Object.keys(trLocale).sort();
+    for (const loc of allLocales) {
+      expect(Object.keys(loc).sort()).toEqual(trKeys);
     }
   });
 
-  it('translates app name and basic navigation', () => {
-    expect(trLocale.app.name).toBe('AEGIS AI Security');
-    expect(enLocale.app.name).toBe('AEGIS AI Security');
-    expect(trLocale.nav.dashboard).toBeDefined();
-    expect(enLocale.nav.dashboard).toBeDefined();
+  it('contains expected categories in all languages', () => {
+    const requiredSections = ['app', 'nav', 'status', 'actions', 'common'];
+    for (const loc of allLocales) {
+      for (const section of requiredSections) {
+        expect(loc).toHaveProperty(section);
+      }
+    }
+  });
+
+  it('translates app name and basic navigation across all languages', () => {
+    for (const loc of allLocales) {
+      expect(loc.app.name).toBe('AEGIS AI Security');
+      expect(loc.nav.dashboard).toBeDefined();
+    }
   });
 });
 
@@ -43,12 +51,13 @@ describe('useAppStore', () => {
     });
   });
 
-  it('toggles language between TR and EN', () => {
+  it('switches between all supported languages', () => {
     expect(useAppStore.getState().language).toBe('tr');
-    useAppStore.getState().setLanguage('en');
-    expect(useAppStore.getState().language).toBe('en');
-    useAppStore.getState().setLanguage('tr');
-    expect(useAppStore.getState().language).toBe('tr');
+    for (const lang of SUPPORTED_LANGUAGES) {
+      useAppStore.getState().setLanguage(lang.code);
+      expect(useAppStore.getState().language).toBe(lang.code);
+      expect(useAppStore.getState().t('app.name')).toBe('AEGIS AI Security');
+    }
   });
 
   it('toggles theme between dark and light', () => {

@@ -1,10 +1,23 @@
 import { create } from 'zustand';
 import tr from '../locales/tr.json';
 import en from '../locales/en.json';
+import de from '../locales/de.json';
+import es from '../locales/es.json';
+import fr from '../locales/fr.json';
+import ru from '../locales/ru.json';
 import type { ConnectionInfo } from '../services/aegis';
 
-type Language = 'tr' | 'en';
-type Theme = 'dark' | 'light';
+export type Language = 'tr' | 'en' | 'de' | 'es' | 'fr' | 'ru';
+export type Theme = 'dark' | 'light';
+
+export const SUPPORTED_LANGUAGES: { code: Language; label: string; flag: string }[] = [
+  { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
+  { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'fr', label: 'Français', flag: '🇫🇷' },
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+];
 
 interface AppState {
   language: Language;
@@ -18,10 +31,13 @@ interface AppState {
   t: (path: string) => string;
 }
 
-const translations: Record<Language, any> = { tr, en };
+const translations: Record<Language, any> = { tr, en, de, es, fr, ru };
+
+const savedLang = (typeof localStorage !== 'undefined' ? localStorage.getItem('aegis_lang') : null) as Language | null;
+const initialLang: Language = savedLang && savedLang in translations ? savedLang : 'tr';
 
 export const useAppStore = create<AppState>((set, get) => ({
-  language: 'tr',
+  language: initialLang,
   theme: 'dark',
   activePage: 'dashboard',
   connection: {
