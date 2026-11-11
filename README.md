@@ -20,7 +20,7 @@
 
 ## ⬇️ İndirme ve Kurulum (Download Official Releases)
 
-AEGIS AI Security'yi hemen bilgisayarınıza kurup korumayı başlatabilirsiniz:
+AEGIS AI Security'yi hemen bilgisayarınıza kurup yeni nesil korumayı başlatabilirsiniz. Tüm yayınlanmış sürümleri incelemek için [GitHub Releases](https://github.com/Kaankrl/AEGIS-Anti-Virus-AI/releases) sayfasını ziyaret edebilirsiniz:
 
 | Paket / İndirme Linki | Tür | Boyut | Açıklama |
 |---|---|---|---|
@@ -28,6 +28,9 @@ AEGIS AI Security'yi hemen bilgisayarınıza kurup korumayı başlatabilirsiniz:
 | 💼 **[AEGIS AI Security 0.1.0.exe](https://github.com/Kaankrl/AEGIS-Anti-Virus-AI/releases/latest/download/AEGIS.AI.Security.0.1.0.exe)** | **Taşınabilir Sürüm (Portable)** | ~116 MB | Kurulum gerektirmez; USB'den veya masaüstünden doğrudan saydam logolu açılışla çalışır. |
 | 🛡️ **[AEGIS-Web-Shield-Extension.zip](https://github.com/Kaankrl/AEGIS-Anti-Virus-AI/releases/latest/download/AEGIS-Web-Shield-Extension.zip)** | **Tarayıcı Kalkanı & AdBlock** | ~62 KB | Brave, Chrome ve Edge için YouTube video reklam atlayıcı, Anti-Popunder ve zararlı link kalkanı. |
 
+> 📦 **Resmi İndirme Sayfası (GitHub Releases):**  
+> Tüm sürümleri, SHA-256 doğrulama kodlarını ve sürüm geçmişini [GitHub Releases Sayfası](https://github.com/Kaankrl/AEGIS-Anti-Virus-AI/releases)'ndan da doğrudan indirebilirsiniz.
+> 
 > 🔒 **Dosya Bütünlüğü Doğrulama (SHA-256 Checksums):**  
 > İndirdiğiniz kurulum dosyalarının orijinal olduğunu doğrulamak için `release/SHA256SUMS.txt` dosyasındaki resmi parmak izlerini kontrol edebilirsiniz.
 
